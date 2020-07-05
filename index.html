@@ -7,6 +7,9 @@
 
 <title> Mohsen's Shop </title>
 <style>
+    html{
+        scroll-behavior: smooth;
+    }
     body{
         background-color: black;
         background-image: url('Images/Car.png');
@@ -23,9 +26,32 @@
         background-size: cover;
         cursor: pointer;
     }
-    #service_tag{
-        position: fixed;
-        top: 110vh;
+    .tags{
+        position: absolute;
+        top: 105vh;
+        color: white;
+        text-align: center;
+        font-size: 50px;
+        width: 100%;
+        font-weight: 1000;
+    }
+    a{ text-decoration: none; }
+    a:link, a:visited { color:white }
+    a:hover{ text-decoration: none; color: red }
+
+    #AutoMo{
+        width: 80vw;
+        height: auto;
+        margin-left: 10vw;
+        margin-right: auto;
+        position: absolute;
+        top: 0vh;
+        z-index: -10;
+    }
+    #tagline{
+        width: 100%;
+        position: absolute;
+        top: 50vh;
         color: white;
         text-align: center;
     }
@@ -37,34 +63,38 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
-        position: sticky;
+        position: absolute;
         top: 0;
         height: 10vh;
-        width: 100;
-        background-color: gray;
+        width: 100%;
+        background-color: #232323;
         color: white;
+        z-index: -1;
     }
-    .company_name{
-        float: left;
+    #nav_table{
+        height: 100%;
+        z-index: 100;
     }
-    .nav_options{
-        float: right;
-    }
-    li {
-        display: block;
-        color: white;
+    .nav_items{
+        width: 10vw;
+        height: 100%;
         text-align: center;
-        padding: 14px 16px;
+        font-size: 20px;
+        padding: 2.5vh;
     }
-    li:last-child{
-        border-right: none;
+    #home{
+        background-color: darkslategray;
+
     }
-    /* ---------------------Navbar Styling----------------------- */
+    .items{
+        height: 100%;
+        width: 100%;
+        display: block;
+        text-decoration: none;
+    }
 
 
-
-
-
+    /* ---------------------Services Styling----------------------- */
     #oil{
         left: 25vw;
         background-image: url('Images/EngineOilBG.PNG');
@@ -98,12 +128,43 @@
 
     @keyframes services_out {
         0%      {color: transparent;}
-        100%    {color: white; top: 115vh;}
+        100%    {color: white; top: 115vh; height: 325px;}
     }
     @keyframes services_in {
         0%      {color: white; top: 115vh;}
         100%    {color: transparent; top: 125vh;}
     }
+
+    /* ABOUT SECTION STYLING */
+    #about_section{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        top: 170vh;
+    }
+    #about_tag{
+        top: 0;
+    }
+    .about{
+        position: absolute;
+        height: 90%;
+        width: 50%;
+        margin-top: 13vh;
+
+    }
+    #right_about{
+        margin-left: 50%;
+        margin-right: auto;
+        float: right;
+        background-color: #fdd700;
+    }
+    #left_about{
+        margin-left: 0;
+        margin-right: auto;
+        float: left;
+        background-color: #232323;
+    }
+
 </style>
 </head>
 
@@ -115,17 +176,30 @@
 
 
 <body>
-<ul id='nav_bar'>
-    <li class='company_name'> Mohsen Inc. </li>
-    <li class='nav_option'> About </li>
-    <li class='nav_option'> Services </li>
-</ul>
+<div id='nav_bar'>
+    <table id='nav_table'>
+        <tr id='nav_row' z-index=100>
+            <th id='home' class='nav_items'> <a href="index.html"> <b> Home </b> </a></th>
+            <th class='nav_items'> <a href="#service_tag"> <div class='items'> Services </div> </a> </th>
+            <th class='nav_items'> <a href="#about_tag"> <div class='items'> About </div> </a></th>
+        </tr>
+    </table>
+</div>
 
-<div id='service_tag'><h1> Services </h1></div>
+<image id="AutoMo" src='Images/AutoMo.png'></image>
+<div id="tagline"> <h2> Why not get your car services delivered to you? </h2> </div>
+<div id='service_tag' class="tags"> Services </div>
+
 <div id='oil' class='services'></div>
-<div id='oil_name' class='service_name' onmouseover="oil_gif()" onmouseout="oil_image()"><h1> Oil Change </h1></div>
+<div id='oil_name' class='service_name' onmouseover="oil_gif()" onmouseout="oil_image()"><h2> Oil Change </h2></div>
 <div id='breaks' class='services'></div>
-<div id='breaks_name' class='service_name' onmouseover="breakpad_gif()" onmouseout="breakpad_image()"><h1> Brake Pads </h1></div>
+<div id='breaks_name' class='service_name' onmouseover="breakpad_gif()" onmouseout="breakpad_image()"><h2> Brake Pads </h2></div>
+
+<div id="about_section">
+    <div id='about_tag' class="tags"> About </div>
+    <div id='right_about' class="about"></div>
+    <div id='left_about' class="about"></div>
+</div>
 
 
 
@@ -154,4 +228,4 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 </body>
-<html>
+</html>
