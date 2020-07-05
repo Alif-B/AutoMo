@@ -156,13 +156,41 @@
         margin-left: 50%;
         margin-right: auto;
         float: right;
-        background-color: #fdd700;
+        background-color: #bb8b00;
     }
     #left_about{
         margin-left: 0;
         margin-right: auto;
         float: left;
         background-color: #232323;
+        animation: infinite;
+        animation-name: quotes_slides;
+        animation-duration: 45s;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #about_para{
+        position: absolute;
+        width: auto;
+        height: auto;
+        top: 15vh;
+        margin-left: 15%;
+        margin-right: 15%;
+        text-align: center;
+    }
+
+    @keyframes quotes_slides {
+        0%      {background-image: url("Images/Quotes1.png");}
+        15%     {background-image: url("Images/Quotes1.png");}
+        20%     {background-image: url("Images/Quotes2.png");}
+        35%     {background-image: url("Images/Quotes2.png");}
+        40%     {background-image: url("Images/Quotes3.png");}
+        55%     {background-image: url("Images/Quotes3.png");}
+        60%     {background-image: url("Images/Quotes4.png");}
+        75%     {background-image: url("Images/Quotes4.png");}
+        80%     {background-image: url("Images/Quotes5.png");}
+        95%     {background-image: url("Images/Quotes5.png");}
+        100%    {background-image: url("Images/Quotes1.png");}
     }
 
 </style>
@@ -197,7 +225,9 @@
 
 <div id="about_section">
     <div id='about_tag' class="tags"> About </div>
-    <div id='right_about' class="about"></div>
+    <div id='right_about' class="about">
+        <div id="about_para"> <h1> <b> Hello and welcome to AutoMo! </b> </h1> <br/><br/> <h4> Ever thgouht about having an oil or brake change at the comfort of your own home? Well, that's exactly what we do. I will come to you whenever you want and I will service your car efficiently with no mess! With us, not only are you comfortable at home, but you also avoid the high prices of the dealerships. Just create a service ticket and we will get back to you with a maintainance package that best suits you!  </h4></div>
+    </div>
     <div id='left_about' class="about"></div>
 </div>
 
