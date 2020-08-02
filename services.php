@@ -2,113 +2,24 @@
 <html>
 
 <head>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <!-- Bootstrap CSS Code -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<!-- My CSS Code -->
+<link rel="stylesheet" type="text/css" href="CSS/AutoMo.css"/>
 
 <title> Mohsen's Shop </title>
-<style>
-    html{
-        scroll-behavior: smooth;
-    }
-    body{
-        background-color: black;
-        background-image: url('Images/Car.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .tags{
-        position: absolute;
-        top: 20vh;
-        color: #232323;
-        background-color: #bb8b00;
-        text-align: center;
-        font-size: 6vh;
-        width: 70%;
-        height: 10vh;
-        margin-left: 15%;
-        font-weight: 1000;
-        font-family: cooper black;
-    }
-    a{ text-decoration: none; }
-    a:link, a:visited { color:white }
-    a:hover{ text-decoration: none; color: red }
-
-    /* ----------------------Navbar Styling---------------------- */
-    #nav_bar{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        position: absolute;
-        top: 0;
-        height: 10vh;
-        width: 100%;
-        background-color: #232323;
-        color: white;
-        z-index: -1;
-    }
-    #nav_table{
-        height: 100%;
-        z-index: 100;
-    }
-    .nav_items{
-        width: 10vw;
-        height: 100%;
-        text-align: center;
-        font-size: 25px;
-        padding: 2.5vh;
-    }
-    #home{
-        background-color: darkslategray;
-
-    }
-    .items{
-        height: 100%;
-        width: 100%;
-        display: block;
-        text-decoration: none;
-    }
-
-    /* ----------------------Booking Page Styling---------------------- */
-    #info_table{
-        background-color: #232323;
-        width: 70%;
-        margin-left: 15%;
-        padding: 20px 35px;
-        position: absolute;
-        top: 30vh;
-        color: #bb8b00;
-        font-weight: 900;
-        opacity: 0.85;
-    }
-    input[type=text], select, textarea{
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        box-sizing: border-box;
-    }
-    input[type=submit]{
-        width: 100%;
-        background-color: darkslategray;
-        color:white;
-        border: none;
-        cursor: pointer;
-        padding: 12px 20px;
-        margin: 8px 0;
-    }
-</style>
 </head>
 
 
 <body>
 <div id='nav_bar'>
     <table id='nav_table'>
-        <tr id='nav_row' z-index=100>
+        <tr id='nav_row' z-index=10>
             <th class='nav_items'> <a href="index.php"> <b> Home </b> </a></th>
-            <th class='nav_items'> <a href="#service_tag"> <div class='items'> Services </div> </a> </th>
+            <th class='nav_items'> <a href="index.php#service_tag"> <div class='items'> Services </div> </a> </th>
             <th class='nav_items'> <a href="index.php#about_tag"> <div class='items'> About </div> </a></th>
-            <th class='nav_items' id='home'> <a href="#nav_bar"> <div class='items'> Book </div> </a></th>
+            <th class='nav_items' id='hose'> <a href="#nav_bar"> <div class='items'> Book </div> </a></th>
         </tr>
     </table>
 </div>
