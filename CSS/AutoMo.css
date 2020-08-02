@@ -283,36 +283,32 @@ input[type=submit]{
     font-size: 20px;
     font-family: cooper black;
     width: 99%;
-    background-color: #232323;
     opacity: 0.90;
 }
 .data{
-    width: 12.5vw;
     text-align: left;
     border-bottom: 1px solid #bb8b00;
-    word-break: break-all;
+    word-break: break-word;
 }
-.data_descrip{
-    font-size: 17px;
-    width: 99vw;
-    word-break: break-all;
-    border-bottom: 1px solid #bb8b00;
-    color: white;
+.appointment_cards{
+    position: relative;
+    margin-top: 1vh;
+    top: 5vh;
+    left: 15vw;
+    width: 70vw;
+    background-color: #232323;
 }
-#appointment_headings{
+.customer_name{
     background-color: #bb8b00;
     color: #232323;
+    width: 100%;
+    text-align: center;
+    border-color: #232323;
 }
-#appointment_table{
-    border-collapse: collapse;
-    border-right: 5px solid #232323;
-}
-.row{
-    border-bottom-color: #232323;
-}
-.row:hover{
-    background-color: #5579d3;
-    color: #eff3f5;
+.label{
+    background-color: #bb8b00;
+    color: #232323;
+    width: 20vw;
 }
 /* ----------------------------- Login Page Stylings ---------------------------------*/
 
@@ -324,6 +320,9 @@ input[type=submit]{
     font-family: cooper black;
     font-size: 4vh;
     color: #bb8b00;
+}
+#pass{
+    width: 100%;
 }
 
 
@@ -455,5 +454,14 @@ input[type=submit]{
     }
     #thnx_note{
         top: -2vh;
+    }
+    /* ------------------------- Appointment Page Stylings ---------------------------------*/
+    #appointment_div{
+        font-size: 10px;
+        top: 10vh;
+    }
+    .appointment_cards{
+        left: 5vw;
+        width: 90vw;
     }
 }

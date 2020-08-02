@@ -3,6 +3,7 @@
 <head>
 <title> AutoMo </title>
 <!-- Bootstrap CSS Code -->
+<meta content="width=device-width initial-scale=1" name="viewport"/>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="CSS/AutoMo.css">
 </head>
@@ -20,53 +21,41 @@
     </div>
 
     <div id="appointment_div">
-        <table id="appointment_table">
-            <tr id="appointment_headings">
-                <th class='data'> Service ID </th>
-                <th class='data'> Service Type </th>
-                <th class='data'> Name </th>
-                <th class='data'> Contact </th>
-                <th class='data'> Make </th>
-                <th class='data'> Model </th>
-                <th class='data'> Year </th>
-                <th class='data'> City </th>
-            </tr>
-            <?php
-                $server_name = "localhost";
-                $database = "servicetickets";
-                $username = "root";
-                $password = "";
+        <?php
+            $server_name = "localhost";
+            $database = "servicetickets";
+            $username = "root";
+            $password = "";
 
-                $connection = mysqli_connect($server_name, $username, $password, $database);
+            $connection = mysqli_connect($server_name, $username, $password, $database);
 
-                if ($connection-> connect_error) {
-                    die("Connection failed:". $connection-> connect_error);
+            if ($connection-> connect_error) {
+                die("Connection failed:". $connection-> connect_error);
+            }
+
+            $sql = "SELECT * FROM service ORDER BY service_id DESC LIMIT 10";
+            $result = $connection-> query($sql);
+
+            if ($result-> num_rows > 0){
+                while ($row = $result-> fetch_assoc()){
+                    echo "<table class='appointment_cards'><tr class='customer_name'><td colspan=2>". $row['username']. "</td></tr><tr><td class='label'> Service # <td class='data'>".
+                            $row['service_id']."</td></tr><tr><td class='label'> Service Type <td class='data'>".
+                            $row['service_type']."</td></tr><tr><td class='label'> Contact <td class='data'>".
+                            $row['contact']."</td></tr><tr><td class='label'> Make <td class='data'>".
+                            $row['make']."</td></tr><tr><td class='label'> Model <td class='data'>".
+                            $row['model']."</td></tr><tr><td class='label'> Year <td class='data'>".
+                            $row['years']."</td></tr><tr><td class='label'> City <td class='data'>".
+                            $row['city']."</td></tr><tr><td class='label'> Description <td class='data'>".
+                            $row['descrip']."</td></tr></table>";
                 }
+                echo "</br></br>";
+            }
+            else { 
+                echo "No appoints booked yet";
+            }
 
-                $sql = "SELECT * FROM service ORDER BY service_id DESC LIMIT 10";
-                $result = $connection-> query($sql);
-
-                if ($result-> num_rows > 0){
-                    while ($row = $result-> fetch_assoc()){
-                        echo "<tr class='row'><td class='data'>". $row['service_id']. "</td><td class='data'>".
-                                $row['service_type']."</td><td class='data'>".
-                                $row['username']."</td><td class='data'>".
-                                $row['contact']."</td><td class='data'>".
-                                $row['make']."</td><td class='data'>".
-                                $row['model']."</td><td class='data'>".
-                                $row['years']."</td><td class='data'>".
-                                $row['city']."</td></tr><tr class='descrip_row'><td class='data_descrip' colspan=8>".
-                                $row['descrip']."</td></tr>";
-                    }
-                    echo "</table>";
-                }
-                else { 
-                    echo "No appoints booked yet";
-                }
-
-                $connection -> close();
-            ?>
-        </table>
+            $connection -> close();
+        ?>
     </div>
 </body>
 </html>
