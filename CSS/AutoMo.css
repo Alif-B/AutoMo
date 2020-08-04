@@ -335,6 +335,9 @@ input[type=submit]{
 /****************************************************************************************/
 
 @media only screen and (max-width: 600px){
+    body{
+        background-image: url('../Images/CarPhone.png');
+    }
    /* ----------------------Navbar Styling---------------------- */
     #nav_bar{
         width: 100vw;
@@ -354,10 +357,10 @@ input[type=submit]{
     #AutoMo{
         width: 100vw;
         margin-left: 0vw;
-        top: 30vh;
+        top: 22vh;
     }
     #tagline{
-        top: 60vh;
+        top: 65vh;
         margin-left: 0vw;
     }
     /* ---------------------Services Styling----------------------- */
@@ -458,6 +461,158 @@ input[type=submit]{
     /* ------------------------- Appointment Page Stylings ---------------------------------*/
     #appointment_div{
         font-size: 10px;
+        top: 10vh;
+    }
+    .appointment_cards{
+        left: 5vw;
+        width: 90vw;
+    }
+}
+
+
+/****************************************************************************************/
+/****************************************************************************************/
+/****************************************************************************************/
+/* ------------------------------ Styles For Tablets ---------------------------------- */
+/****************************************************************************************/
+/****************************************************************************************/
+/****************************************************************************************/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    body{
+        background-image: url('../Images/CarPhone.png');
+    }
+    /* ----------------------Navbar Styling---------------------- */
+    #nav_bar{
+        width: 100vw;
+    }
+    #nav_table{
+        width: 100vw;
+    }
+    .nav_items{
+        font-size: 25px;
+        padding: 2.5vh;
+        padding-top: 3.5vh;
+    }
+    #home{
+        padding-top: 2vh;
+    }
+    /* ------------------------- AutoMo Logo ---------------------------------- */
+    #AutoMo{
+        width: 100vw;
+        margin-left: 0vw;
+        top: 30vh;
+    }
+    #tagline{
+        top: 60vh;
+        margin-left: 0vw;
+    }
+    /* ---------------------Services Styling----------------------- */
+    #oil{
+        left: 25vw;
+        width: 50vw;
+        height: 50vw;
+    }
+    #breaks{
+        top: 180vh;
+        left: 25vw;
+        height: 50vw;
+        width: 50vw;
+    }
+    #oil_name{
+        top: 117vh;
+        left: 38vw;
+        animation-name: none;
+    }
+    #breaks_name{
+        top: 170vh;
+        left: 37vw;
+        animation-name: none;
+    }
+    .tags{
+        top: 105vh;
+        left: 0vw;
+        text-align: center;
+        font-size: 50px;
+    }
+    /* ---------------ABOUT SECTION STYLING------------ */
+    #about_section{
+        top: 225vh;
+    }
+    .about{
+        top: -3vh;
+        height: 55%;
+        width: 100%;
+
+    }
+    #right_about{
+        margin-left: 0%;
+    }
+    #left_about{
+        top: 52vh;
+        left: 0vw;
+        background-size: cover;
+    }
+    #about_para{
+        top: 7vh;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 3.2vw;
+    }
+    /* -------------FOOTER STYLINGS-------------- */
+    #footer{
+        width: 100%;
+        top: 345vh;
+    }
+    #footer_logo{
+        width: 35vw;
+        height: 12vh;
+        left: 33vw;
+        top: 1vh;
+    }
+    #by{
+        width: 50vw;
+        height: 8vh;
+        left: 25vw;
+        top: 13vh;
+    }
+    .contact{
+        top: 8vh;
+        left: 0vw;
+    }
+    /* ------------------------ Booking Page Styling -----------------------*/
+    #book{
+        top: 13vh;
+        height: 5vh;
+        width: 90vw;
+        font-size: 20px;
+        margin-left: 5vw;
+        padding-top: 1vh;
+    }
+    #info_table{
+        width: 90vw;
+        margin-left: 5vw;
+        padding: 10px 17px;
+        top: 18vh;
+    }
+    input[type=text], select, textarea{
+        padding: 6px 10px;
+        margin: 4px 0;
+    }
+    #hose{
+        background-color: darkslategray;
+    }
+    /*--------------------------- Thanks for oderding page -------------------------- */
+    #thanks{
+        height: 13vh;
+        top: 30vh;
+    }
+    #thnx_note{
+        top: -2vh;
+    }
+    /* ------------------------- Appointment Page Stylings ---------------------------------*/
+    #appointment_div{
+        font-size: 20px;
         top: 10vh;
     }
     .appointment_cards{

@@ -39,14 +39,14 @@
             if ($result-> num_rows > 0){
                 while ($row = $result-> fetch_assoc()){
                     echo "<table class='appointment_cards'><tr class='customer_name'><td colspan=2>". $row['username']. "</td></tr><tr><td class='label'> Service # <td class='data'>".
-                            $row['service_id']."</td></tr><tr><td class='label'> Service Type <td class='data'>".
-                            $row['service_type']."</td></tr><tr><td class='label'> Contact <td class='data'>".
-                            $row['contact']."</td></tr><tr><td class='label'> Make <td class='data'>".
-                            $row['make']."</td></tr><tr><td class='label'> Model <td class='data'>".
-                            $row['model']."</td></tr><tr><td class='label'> Year <td class='data'>".
-                            $row['years']."</td></tr><tr><td class='label'> City <td class='data'>".
-                            $row['city']."</td></tr><tr><td class='label'> Description <td class='data'>".
-                            $row['descrip']."</td></tr></table>";
+                    $row['service_id']."</td></tr><tr><td class='label'> Service Type <td class='data'>".
+                    $row['service_type']."</td></tr><tr><td class='label'> Contact <td class='data'>".
+                    $row['contact']."</td></tr><tr><td class='label'> Make <td class='data'>".
+                    $row['make']."</td></tr><tr><td class='label'> Model <td class='data'>".
+                    $row['model']."</td></tr><tr><td class='label'> Year <td class='data'>".
+                    $row['years']."</td></tr><tr><td class='label'> City <td class='data'>".
+                    $row['city']."</td></tr><tr><td class='label'> Description <td class='data'>".
+                    $row['descrip']."</td></tr></table>";
                 }
                 echo "</br></br>";
             }
