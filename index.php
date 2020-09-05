@@ -3,6 +3,7 @@
 
 <head>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link rel="icon" href="Images/favicon.png" type="image/gif" sizes="16x16">
 <!-- Bootstrap CSS Code -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <!-- My CSS code -->
@@ -16,7 +17,7 @@
     <table id='nav_table'>
         <tr id='nav_row' z-index=100>
             <th id='home' class='nav_items'> <a href="index.php"> <b> Home </b> </a></th>
-            <th class='nav_items'> <a href="#service_tag"> <div class='items'> Services </div> </a> </th>
+            <th class='nav_items'> <a href="#service_tag"> <div class='items'> Prices </div> </a> </th>
             <th class='nav_items'> <a href="#about_tag"> <div class='items'> About </div> </a></th>
             <th class='nav_items'> <a href="services.php"> <div class='items'> Book </div> </a></th>
         </tr>
@@ -25,17 +26,19 @@
 
 <image id="AutoMo" src='Images/AutoMo.png'></image>
 <div id="tagline"> <h2> Why not get your car services delivered to you? </h2> </div>
-<div id='service_tag' class="tags"> Services </div>
+<div id='service_tag' class="tags"> Prices </div>
 
 <div id='oil' class='services'></div>
-<a href="services.php"><div id='oil_name' class='service_name' onmouseover="oil_gif()" onmouseout="oil_image()"><h2> Oil Change </h2></div></a>
+<a href="services.php"><div id='oil_name' class='service_name' onmouseover="oil_gif()" onmouseout="oil_image()"><p> Oil Change <br> Conventional - $30+ <br> Synthetic - $50+ </p></div></a>
 <div id='breaks' class='services'></div>
-<a href="services.php"><div id='breaks_name' class='service_name' onmouseover="breakpad_gif()" onmouseout="breakpad_image()"><h2> Brake Pads </h2></div></a>
+<a href="services.php"><div id='breaks_name' class='service_name' onmouseover="breakpad_gif()" onmouseout="breakpad_image()"><p> Brake Pads <br> Change - $60+ </p></div></a>
 
 <div id="about_section">
     <div id='about_tag' class="tags"> About </div>
     <div id='right_about' class="about">
-        <div id="about_para"> <p id="headline"> <b> Hello and welcome to <a id='secret' href="login.html">AutoMo!</a> </b> </p> <p> Ever thought about having an oil or brake change at the comfort of your own home? Well, that's exactly what we do. We will come to you whenever you want and service your car efficiently with no mess! With us, not only are you comfortable at home, but you also avoid the high prices of the dealerships and untrustworthy mechanics. Just create a service ticket and we will get back to you with a maintainance package that best suits you!  </p></div>
+        <div id="about_para"> <p id="headline"> <b> Hello and welcome to <a id='secret' href="login.html">AutoMo!</a> </b> </p> <p> Ever thought about having an oil or brake change at the comfort of your own home? Well, that's exactly what we do. We will come to you whenever you want and service your car efficiently with no mess! With us, not only are you comfortable at home, but you also avoid the high prices of the dealerships and untrustworthy mechanics. Just create a service ticket and we will get back to you with a maintainance package that best suits you!  </p> <br>
+            <p id='phone_number'> For more inquiries contact us at (604)-445-2415</p>
+        </div>
     </div>
     <div id='left_about' class="about"></div>
 </div>
