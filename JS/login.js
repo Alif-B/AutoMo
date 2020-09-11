@@ -1,5 +1,5 @@
 let username = "Mohsen";
-let password = "BigCocks";
+let password = "nasusisbroken1";
 
 function credentials() {
     let provided_username = document.getElementById("name").value;

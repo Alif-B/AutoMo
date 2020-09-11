@@ -27,10 +27,23 @@
 <div id="tagline"> <h2> Why not get your car services delivered to you? </h2> </div>
 <div id='service_tag' class="tags"> Services </div>
 
+<div id='job-slide'>
+    <div class='leftside'> </div>
+    <img id='PIC1' class ='pics' src='./Images/PIC1.png' />
+    <img id='PIC2' class ='pics' src='./Images/PIC2.png' />
+    <img id='PIC3' class ='pics' src='./Images/PIC3.png' />
+    <img id='PIC4' class ='pics' src='./Images/PIC4.png' />
+    <img id='PIC5' class ='pics' src='./Images/PIC5.png' />
+    <img id='PIC6' class ='pics' src='./Images/PIC6.png' />
+    <img id='PIC7' class ='pics' src='./Images/PIC7.png' />
+    <img id='PIC7' class ='pics' src='./Images/PIC8.png' />
+    <div id='rightside' class='leftside'> </div>
+</div>
+
 <div id='oil' class='services'></div>
-<a href="services.php"><div id='oil_name' class='service_name' onmouseover="oil_gif()" onmouseout="oil_image()"><h2> Oil Change </h2></div></a>
+<a href="services.php"><div id='oil_name' class='service_name' onmouseover="oil_gif()" onmouseout="oil_image()"><p> Oil Change <br> Conventional - $30+ <br> Synthetic - $50+ </p></div></a>
 <div id='breaks' class='services'></div>
-<a href="services.php"><div id='breaks_name' class='service_name' onmouseover="breakpad_gif()" onmouseout="breakpad_image()"><h2> Brake Pads </h2></div></a>
+<a href="services.php"><div id='breaks_name' class='service_name' onmouseover="breakpad_gif()" onmouseout="breakpad_image()"><p> Brake Pads <br> Change - $60+ </p></div></a>
 
 <div id="about_section">
     <div id='about_tag' class="tags"> About </div>
