@@ -13,7 +13,7 @@
         <table id='nav_table'>
             <tr id='nav_row' z-index=100>
                 <th class='nav_items'> <a href="index.php"> <b> Home </b> </a></th>
-                <th class='nav_items'> <a href="index.php#service_tag"> <div class='items'> Services </div> </a> </th>
+                <th class='nav_items'> <a href="index.php#service_tag"> <div class='items'> Prices </div> </a> </th>
                 <th class='nav_items'> <a href="index.php#about_tag"> <div class='items'> About </div> </a></th>
                 <th class='nav_items'> <a href="services.php"> <div class='items'> Book </div> </a></th>
             </tr>
@@ -23,9 +23,9 @@
     <div id="appointment_div">
         <?php
             $server_name = "localhost";
-            $database = "servicetickets";
-            $username = "root";
-            $password = "";
+            $database = "u767810112_servicetickets";
+            $username = "u767810112_mohsen";
+            $password = "Nasusisbroken1";
 
             $connection = mysqli_connect($server_name, $username, $password, $database);
 

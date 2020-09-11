@@ -100,6 +100,9 @@ a:hover{ text-decoration: none; color: red }
     background-color: darkslategray;
 
 }
+#hose{
+    background-color: darkslategray;
+}
 .items{
     height: 100%;
     width: 100%;
@@ -124,6 +127,8 @@ a:hover{ text-decoration: none; color: red }
     right: 25vw;
 }
 .service_name{
+    font-size: 1vw;
+    font-weight: 900;
     width: 250px;
     height: 250px;
     position: absolute;
@@ -142,7 +147,11 @@ a:hover{ text-decoration: none; color: red }
 
 @keyframes services_out {
     0%      {color: transparent;}
+<<<<<<< HEAD
     100%    {color: white; top: 125vh; height: 325px;}
+=======
+    100%    {color: white; top: 115vh; height: 350px;}
+>>>>>>> 452dbeb3a1024fe6bb1c864f5270cf1a80e6f725
 }
 @keyframes services_in {
     0%      {color: white; top: 125vh;}
@@ -192,7 +201,13 @@ a:hover{ text-decoration: none; color: red }
     margin-left: 15%;
     margin-right: 15%;
     text-align: center;
-    font-family: cooper black;
+    font-family: cooper-black-std, serif;
+}
+#phone_number{
+    text-align: center;
+    font-size: 2.5vw;
+    font-family: cooper-black-std, serif;
+    font-weight: 900;
 }
 
 @keyframes quotes_slides {
@@ -353,7 +368,11 @@ input[type=submit]{
 /****************************************************************************************/
 /****************************************************************************************/
 
+<<<<<<< HEAD
 @media only screen and (max-width: 600px) and (orientation: portrait){
+=======
+@media only screen and (max-device-width: 490px){
+>>>>>>> 452dbeb3a1024fe6bb1c864f5270cf1a80e6f725
     body{
         background-image: url('../Images/CarPhone.png');
     }
@@ -379,25 +398,29 @@ input[type=submit]{
         top: 22vh;
     }
     #tagline{
-        top: 65vh;
+        top: 70vh;
         margin-left: 0vw;
     }
     /* ---------------------Services Styling----------------------- */
     #oil{
-        left: 17vw;
+        left: 20vw;
     }
     #breaks{
         top: 170vh;
-        left: 17vw;
+        left: 20vw;
     }
     #oil_name{
-        top: 117vh;
-        left: 17vw;
+        font-weight: 900;
+        font-size: 2vh;
+        top: 115vh;
+        left: 20vw;
         animation-name: none;
     }
     #breaks_name{
+        font-weight: 900;
+        font-size: 2vh;
         top: 163vh;
-        left: 18vw;
+        left: 20vw;
         animation-name: none;
     }
     .tags{
@@ -423,10 +446,16 @@ input[type=submit]{
         top: 50vh;
     }
     #about_para{
-        top: 7vh;
+        top: 6vh;
         margin-left: 5%;
         margin-right: 5%;
         font-size: 4vw;
+    }
+    #phone_number{
+        text-align: center;
+        font-size: 5vw;
+        font-family: cooper black;
+        font-weight: 900;
     }
     /* -------------FOOTER STYLINGS-------------- */
     #footer{
@@ -497,7 +526,7 @@ input[type=submit]{
 /****************************************************************************************/
 /****************************************************************************************/
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     body{
         background-image: url('../Images/CarPhone.png');
     }
@@ -539,13 +568,17 @@ input[type=submit]{
         width: 50vw;
     }
     #oil_name{
+        font-size: 1.5vh;
+        font-weight: 900;
         top: 117vh;
-        left: 38vw;
+        left: 36vw;
         animation-name: none;
     }
     #breaks_name{
+        font-size: 1.5vh;
+        font-weight: 900;
         top: 170vh;
-        left: 37vw;
+        left: 36vw;
         animation-name: none;
     }
     .tags{
@@ -577,6 +610,12 @@ input[type=submit]{
         margin-left: 5%;
         margin-right: 5%;
         font-size: 3.2vw;
+    }
+    #phone_number{
+        text-align: center;
+        font-size: 4vw;
+        font-family: cooper black;
+        font-weight: 900;
     }
     /* -------------FOOTER STYLINGS-------------- */
     #footer{
@@ -637,5 +676,151 @@ input[type=submit]{
     .appointment_cards{
         left: 5vw;
         width: 90vw;
+    }
+}
+
+
+/****************************************************************************************/
+/****************************************************************************************/
+/****************************************************************************************/
+/* ------------------------------ Styles For Landscape Mode --------------------------- */
+/****************************************************************************************/
+/****************************************************************************************/
+/****************************************************************************************/
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* ------------------------- AUTOMO WEBSITE CSS PAGE ------------------------------- */
+    #AutoMo{
+        top: 0vh;
+    }
+    #tagline{
+        top: 70vh;
+    }
+    
+    /* ----------------------Navbar Styling---------------------- */
+    #nav_bar{
+        height: 16vh;
+    }
+
+    /* ---------------------Services Styling----------------------- */
+    #oil{
+        top: 160vh;
+        height: 30vw;
+        width: 30vw;
+        left: 15vw;
+    }
+    #breaks{
+        top: 160vh;
+        height: 30vw;
+        width: 30vw;
+        left: 55vw;
+    }
+    #oil_name{
+        font-size: 5vh;
+        font-weight: 900;
+        top: 130vh;
+        left: 5vw;
+    }
+    #breaks_name{
+        font-size: 5vh;
+        font-weight: 900;
+        top: 130vh;
+        left: 45vw;
+    }
+    .service_name{
+        height: 50vw;
+        width: 50vw;
+        top: 140vh;
+        animation-name: none;
+    }
+    
+    /* ---------------ABOUT SECTION STYLING------------ */
+    #about_section{
+        top: 240vh;
+    }
+    .about{
+        position: absolute;
+        height: 115%;
+        width: 50%;
+        margin-top: 13vh;
+    }
+    #right_about{
+        top: 10vh;
+        margin-left: 50%;
+    }
+    #left_about{
+        top: 10vh;
+    }
+    #about_para{
+        position: absolute;
+        font-size: 1.5vw;
+        width: auto;
+        height: auto;
+        top: 23vh;
+        margin-left: 15%;
+        margin-right: 15%;
+        text-align: center;
+        font-family: cooper black;
+    }
+    #phone_number{
+        text-align: center;
+        font-size: 2.5vw;
+        font-family: cooper black;
+        font-weight: 900;
+    }
+
+    /* -------------FOOTER STYLINGS-------------- */
+    #footer{
+        background-color: black;
+        position: absolute;
+        text-align: center;
+        height: 10vh;
+        width: 100%;
+        top: 380vh;
+    }
+    #footer_logo{
+        position: absolute;
+        height: 8vh;
+        width: 16vh;
+        left: 1px;
+        top: 2.5vh;
+    }
+    #by{
+        position: absolute;
+        color: white;
+        width: 12vw;
+        height: 6vh;
+        left: 85vw;
+        top: 2.5vh;
+        font-size: 5px;
+    }
+    .contact{
+        position: relative;
+        top: 2vh;
+    }
+    #appointment_div{
+        position: absolute;
+        top: 30vh;
+        color: #bb8b00;
+        font-size: 20px;
+        font-family: cooper black;
+        width: 99%;
+        opacity: 0.90;
+    }
+    /* ------------------------ Booking Page Styling -----------------------*/
+    #book{
+        top: 20vh;
+        height: 10vh;
+    }
+    #info_table{
+        top: 30vh;
+    }
+    input[type=text], select, textarea{
+        padding: 6px 10px;
+        margin: 4px 0;
+    }
+    #hose{
+        background-color: darkslategray;
     }
 }

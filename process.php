@@ -13,9 +13,9 @@ if (isset($_POST['Clicked'])){
 
     # Database Information
     $server = "localhost";
-    $DBUser = "root";
-    $DBPassword = "";
-    $DBName = "servicetickets";
+    $DBUser = "u767810112_mohsen";
+    $DBPassword = "Nasusisbroken1";
+    $DBName = "u767810112_servicetickets";
 
     # Database Connection
     $connection = mysqli_connect($server, $DBUser, $DBPassword, $DBName);
