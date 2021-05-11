@@ -3,12 +3,13 @@
 
 <head>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link rel="icon" href="Images/favicon.ico" type="image/gif" sizes="16x16">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Rajdhani:wght@700&display=swap" rel="stylesheet">
 <!-- Bootstrap CSS Code -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<!-- My CSS Code -->
+<!-- My CSS code -->
 <link rel="stylesheet" type="text/css" href="CSS/AutoMo.css"/>
-
-<title> Mohsen's Shop </title>
+<title> AutoMo Shop </title>
 </head>
 
 
@@ -17,7 +18,7 @@
     <table id='nav_table'>
         <tr id='nav_row' z-index=10>
             <th class='nav_items'> <a href="index.php"> <b> Home </b> </a></th>
-            <th class='nav_items'> <a href="index.php#service_tag"> <div class='items'> Prices </div> </a> </th>
+            <th class='nav_items'> <a href="index.php#service_tag"> <div class='items'> Services </div> </a> </th>
             <th class='nav_items'> <a href="index.php#about_tag"> <div class='items'> About </div> </a></th>
             <th class='nav_items' id='hose'> <a href="#nav_bar"> <div class='items'> Book </div> </a></th>
         </tr>
@@ -30,8 +31,16 @@
     <form id="car_info" action="process.php" method="POST">
         <label for="service" class='keys'> Service Type* </label>
         <select id='service' name='service'>
-            <option value="Oil Change"> Oil Change </option>
-            <option value="Brake Pads"> Brake Pads </option>
+            <option value="Oil Change"> Regular Oil Change </option>
+            <option value="Brake Pads"> Full Synthetic Oil Change </option>
+            <option value="Oil Change"> Full Synthetic Oil Change (European Car) </option>
+            <option value="Brake Pads"> Brake Services </option>
+            <option value="Oil Change"> Brake Bleeding / Brake Fluid Flush </option>
+            <option value="Brake Pads"> Automatic Trasmission Fluid </option>
+            <option value="Oil Change"> CVT Fluid Change </option>
+            <option value="Brake Pads"> AC Recharge </option>
+            <option value="Brake Pads"> Windsheld Repair </option>
+            <option value="Brake Pads"> Detailing </option>
         </select>
 
         <label for="name" class='keys'> Name </label>
