@@ -23,29 +23,31 @@ body{
 }
 a{ text-decoration: none; }
 a:link, a:visited { color:white }
-a:hover{ text-decoration: none; color: red }
+a:hover{ text-decoration: none; color: #EDB000 }
 
-#AutoMo{
+#AutoMo, #AutoMo2{
     width: 80vw;
     height: auto;
     margin-left: 10vw;
     margin-right: auto;
     position: absolute;
-    top: -10vh;
+    top: -15vh;
     z-index: -100;
 }
 #tagline{
     width: 100%;
     position: absolute;
-    top: 45vh;
+    top: 35vh;
     color: white;
     text-align: center;
-    font-family: cooper black;
+    font-family: 'Teko', sans-serif;
+    font-weight: 900;
+    font-size: 250%;
 }
 #job-slide{
     background-image: url('../Images/Example.png');
     position: relative;
-    top: 55vh;
+    top: 50vh;
     width: 100%;
     height: 60vh;
     background-size: auto 95%;
@@ -86,7 +88,7 @@ a:hover{ text-decoration: none; color: red }
     width: 100%;
     background-color: black;
     color: white;
-    z-index: 1;
+    z-index: 20;
     border-bottom-color: #EDB000;
     border-bottom-style: solid;
     border-bottom-width: 4px;
@@ -101,11 +103,10 @@ a:hover{ text-decoration: none; color: red }
     width: 10vw;
     height: 100%;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.7vw;
     padding: 2.5vh;
-}
-#hose{
-    background-color: darkslategray;
+    position: relative;
+    top: -1vh;
 }
 .items{
     height: 100%;
@@ -117,7 +118,7 @@ a:hover{ text-decoration: none; color: red }
 
 /* ---------------------Services Styling----------------------- */
 #service_tag{
-    top: 6vh;
+    top: 4vh;
     color: #EDB000;
     font-size: 3vw;
 }
@@ -129,8 +130,8 @@ a:hover{ text-decoration: none; color: red }
 }
 .services{
     width: 21vw;
-    height: 275px;
     position: absolute;
+    height: 35vh;
     top: 17vh;
     left: 14vw;
     border-style: solid;
@@ -141,7 +142,7 @@ a:hover{ text-decoration: none; color: red }
 }
 .second_services{
     width: 21vw;
-    height: 275px;
+    height: 35vh;
     position: absolute;
     top: 58vh;
     left: 14vw;
@@ -153,7 +154,7 @@ a:hover{ text-decoration: none; color: red }
 }
 .third_services{
     width: 21vw;
-    height: 275px;
+    height: 35vh;
     position: absolute;
     top: 99vh;
     left: 14vw;
@@ -165,7 +166,7 @@ a:hover{ text-decoration: none; color: red }
 }
 .fourth_services{
     width: 21vw;
-    height: 275px;
+    height: 35vh;
     position: absolute;
     top: 140vh;
     left: 14vw;
@@ -175,12 +176,15 @@ a:hover{ text-decoration: none; color: red }
     border-color: #EDB000;
     font-family: 'Teko', sans-serif;
 }
-.service_name{
+.service_name, .service_big_name{
     color: white;
-    font-size: 4.2vh;
+    font-size: 250%;
     font-weight: 600;
     padding-left: 3%;
     padding-top: 2%;
+}
+.service_big_name{
+    font-size: 180%;
 }
 .service_price{
     color: #EDB000;
@@ -211,18 +215,12 @@ a:hover{ text-decoration: none; color: red }
     background-color: #232323;
     color:#bb8b00;
 }
-.specified{
-    font-size: 15px;
-    position: relative;
-    top: 0%;
-    z-index: -1;
-}
 
-#synthetic_oil{
+#synthetic_oil, #synthetic_oil2, #synthetic_oil3, #synthetic_oil4{
     left: 39vw ;
 }
 
-#synthetic_oil_eu{
+#synthetic_oil_eu, #synthetic_oil_eu2, #synthetic_oil_eu3, #synthetic_oil_eu4{
     left: 64vw ;
 }
 .coming{
@@ -249,6 +247,7 @@ a:hover{ text-decoration: none; color: red }
 }
 #about_tag{
     top: 0;
+    color: #EDB000;
 }
 .about{
     position: absolute;
@@ -260,85 +259,176 @@ a:hover{ text-decoration: none; color: red }
     margin-left: 50%;
     margin-right: auto;
     float: right;
-    background-color: #bb8b00;
+    background-color: #232323;
+    border-left-color: #EDB000;
+    border-left-style: solid;
+    border-left-width: 4px;
+    border-left-color: #EDB000;
 }
+#headline{
+    color: #EDB000;
+    font-size: 8vh;
+}
+#about_text{
+    color: white;
+    position: relative;
+    top: 5vh;
+}
+#phone_number{
+    position: relative;
+    top: 5vh;
+    text-align: center;
+    font-size: 2.5vw;
+    font-family: 'Teko', sans-serif;
+    font-weight: 900;
+    line-height: 6vh;
+    color: #EDB000;
+}
+#secret{ color: #EDB000; cursor: text;}
+#secret:hover{ color: #EDB000; cursor: text;}
+#secret:visited{ color: #EDB000; cursor: text;}
+
 #left_about{
     margin-left: 0;
     margin-right: auto;
     float: left;
     background-color: #232323;
-    animation: infinite;
-    animation-name: quotes_slides;
-    animation-duration: 45s;
-    background-repeat: no-repeat;
     background-size: contain, cover;
+    background-image: url("../Images/instapic.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 25vh;
 }
 #about_para{
     position: absolute;
-    font-size: 1.5vw;
+    font-size: 3.5vh;
     width: auto;
     height: auto;
-    top: 15vh;
+    top: 20vh;
     margin-left: 15%;
     margin-right: 15%;
     text-align: center;
     font-family: 'Teko', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
+    line-height: 4vh;
 }
-#phone_number{
-    text-align: center;
-    font-size: 2.5vw;
+.instatext{
+    color: #EDB000;
     font-family: 'Teko', sans-serif;
-    font-weight: 900;
+    text-align: center;
+    position: relative;
+    top: 8vh;
+    font-size: 6vh;
+    line-height: 3vh;
+    font-weight: 1000;
+}
+#instatext2{
+    font-size: 4vh;
+    color: white;
+    font-weight: 500;
+}
+#instatext3{
+    font-size: 4vh;
+    color: #EDB000;
+    font-weight: 500;
 }
 
-@keyframes quotes_slides {
-    0%      {background-image: url("../Images/Quotes1.png");}
-    15%     {background-image: url("../Images/Quotes1.png");}
-    20%     {background-image: url("../Images/Quotes2.png");}
-    35%     {background-image: url("../Images/Quotes2.png");}
-    40%     {background-image: url("../Images/Quotes3.png");}
-    55%     {background-image: url("../Images/Quotes3.png");}
-    60%     {background-image: url("../Images/Quotes4.png");}
-    75%     {background-image: url("../Images/Quotes4.png");}
-    80%     {background-image: url("../Images/Quotes5.png");}
-    95%     {background-image: url("../Images/Quotes5.png");}
-    100%    {background-image: url("../Images/Quotes1.png");}
+/* -------------Questions STYLINGS-------------- */
+
+#questions{
+    position: absolute;
+    top: 403vh;
+    width: 100%;
+    height: 90vh;
+    background-image: url("../Images/email_icon.png");
+    background-position: center;
+    background-position-y: 7vh;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    font-family: 'Teko', sans-serif;
+    font-size: 3vh;
+}
+#questions_tag{
+    color: #EDB000;
+    position: relative;
+    top: 22vh;
+    font-size: 5vh;
+    font-weight: 900;
+}
+#question_box{
+    width: 60%;
+    position: relative;
+    top: 25vh;
+    left: 20%;
+    font-family: 'Teko', sans-serif;
+}
+.question_boxes{
+    height: 7vh;
+}
+#send_question{
+    font-size: 4vh;
+    background-color: #bb8b00;
+    color: white;
+    width: 30%;
+}
+#send_question:hover{
+    background-color: #232323;
+    color:#bb8b00;
+}
+#the_question{
+    height: 18vh;
+    font-size: 3vh;
 }
 
 /* -------------FOOTER STYLINGS-------------- */
-#footer{
-    background-color: black;
+
+#footer, #booking_footer{
+    background-color: #232323;
     position: absolute;
     text-align: center;
-    height: 10vh;
+    height: 23vh;
     width: 100%;
-    top: 403vh;
+    top: 500vh;
+}
+#booking_footer{
+    top: 160vh;
 }
 #footer_logo{
     position: absolute;
     height: 8vh;
     width: 16vh;
     left: 1px;
-    top: 2.5vh;
+    top: 8vh;
 }
 #by{
     position: absolute;
     color: white;
-    width: 10vw;
+    width: 8vw;
     height: 8vh;
-    left: 88vw;
-    top: 2.5vh;
+    left: 90vw;
+    top: 10vh;
+    font-size: 0.7vw;
 }
-.contact{
+#copyright{
     position: relative;
-    top: 2.5vh;
+    width: 30%;
+    left: 35%;
+    top: 4vh;
+    text-align: center;
+    color: gray;
+    font-family: 'Teko', sans-serif;
+    font-size: 2vh;
+    font-weight: 500;
 }
+
 /*--------------------------- Thanks for oderding page -------------------------- */
+
 #thanks{
     height: 30vh;
     width: 100%;
     text-align: center;
+    vertical-align:middle;
     background-color: #bb8b00;
     position: absolute;
     top: 40vh;
@@ -346,33 +436,37 @@ a:hover{ text-decoration: none; color: red }
     opacity: 0.9;
 }
 #thnx_note{
-    top: 0vh;
+    top: 2vh;
     color: #232323;
+    padding-top: 2.5%;
+    font-family: 'Teko', sans-serif;
 }
 /* ------------------------ Booking Page Styling -----------------------*/
 #book{
     position: absolute;
-    top: 20vh;
+    top: 40vh;
     background-color: #bb8b00;
     color: #232323;
     height: 10vh;
-    width: 70%;
+    width: 70vw;
     margin-left: 15%;
-
+    font-size: 3.5vw;
 }
 #info_table{
     background-color: #232323;
-    width: 70%;
+    width: 70vw;
     margin-left: 15%;
-    padding: 20px 35px;
+    padding: 20px 25px;
     position: absolute;
-    top: 30vh;
-    color: #bb8b00;
+    top: 50vh;
+    color: #EDB000;
     font-weight: 900;
     opacity: 0.85;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.3vw;
 }
-input[type=text], select, textarea{
-    width: 100%;
+input[type=text], select, textarea {
+    width: 55vw;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -380,18 +474,23 @@ input[type=text], select, textarea{
 }
 input[type=submit]{
     width: 100%;
-    background-color: darkslategray;
+    background-color: #bb8b00;
     color:white;
     border: none;
     cursor: pointer;
     padding: 12px 20px;
     margin: 8px 0;
 }
-#secret{ color: #232323; cursor: text;}
-#secret:hover{ color: #232323; cursor: text;}
-#secret:visited{ color: #232323; cursor: text;}
+input[type=submit]:hover{
+    background-color: darkslategray;
+    color: #EDB000;
+}
+label {
+    position: relative;
+    margin: 3vh;
+}
 
-/* ------------------------- Appointment Page Stylings ---------------------------------*/
+/* ------------------------- Appointment Page Stylings --------------------------------- */
 #appointment_div{
     position: absolute;
     top: 20vh;
@@ -451,9 +550,6 @@ input[type=submit]{
 /****************************************************************************************/
 
 @media only screen and (max-device-width: 490px){
-    body{
-        background-image: url('../Images/CarPhone.png');
-    }
    /* ----------------------Navbar Styling---------------------- */
     #nav_bar{
         width: 100vw;
@@ -466,115 +562,236 @@ input[type=submit]{
         padding: 2.5vh;
         padding-top: 3.5vh;
     }
-    #home{
-        padding-top: 2vh;
-    }
     /* ------------------------- AutoMo Logo ---------------------------------- */
-    #AutoMo{
+    #AutoMo, #AutoMo2{
         width: 100vw;
         margin-left: 0vw;
-        top: 22vh;
+        top: 10vh;
     }
     #tagline{
-        top: 70vh;
-        margin-left: 0vw;
+        top: 35vh;
+        width: 90vw;
+        margin-left: 5vw;
+        font-size: 150%;
+    }
+    #job-slide{
+        top: 55vh;
     }
     /* ---------------------Services Styling----------------------- */
-    #oil{
-        left: 20vw;
+    #service_tag{
+        top: 4vh;
+        font-size: 15vw;
     }
-    #breaks{
-        top: 170vh;
-        left: 20vw;
+    #synthetic_oil{
+        top: 55vh;
     }
-    #oil_name{
-        font-weight: 900;
-        font-size: 2vh;
-        top: 115vh;
-        left: 20vw;
-        animation-name: none;
+    #synthetic_oil_eu{
+        top: 93vh;
     }
-    #breaks_name{
-        font-weight: 900;
-        font-size: 2vh;
-        top: 163vh;
-        left: 20vw;
-        animation-name: none;
+    #reg_oil2{
+        top: 131vh;
     }
-    .tags{
-        top: 105vh;
-        left: 0vw;
-        text-align: center;
-        font-size: 50px;
+    #synthetic_oil2{
+        top: 169vh;
     }
+    #synthetic_oil_eu2{
+        top: 207vh;
+    }
+    #reg_oil3{
+        top: 245vh;
+    }
+    #synthetic_oil3{
+        top: 283vh;
+    }
+    #synthetic_oil_eu3{
+        top: 321vh;
+    }
+    #reg_oil4{
+        top: 359vh;
+    }
+    #synthetic_oil4{
+        top: 397vh;
+    }
+    #synthetic_oil_eu4{
+        top: 435vh;
+    }
+    .services, .second_services, .third_services, .fourth_services{
+        width: 80vw;
+        height: 35vh;
+        top: 17vh;
+        left: 10vw;
+    }
+    #synthetic_oil, #synthetic_oil_eu,  #reg_oil2, #synthetic_oil2, #synthetic_oil_eu2, #reg_oil3, #synthetic_oil3, #synthetic_oil_eu3,  #reg_oil4, #synthetic_oil4, #synthetic_oil_eu4{
+        left: 10vw;
+    }
+    .service_name{
+        font-size: 185%;
+    }
+    .service_big_name{
+        font-size: 140%;
+    }
+    .service_description{
+        font-size: 125%;
+    }
+    .coming_soon{
+        width: 50%;
+        left: 25%;
+    }
+    
+    
     /* ---------------ABOUT SECTION STYLING------------ */
     #about_section{
-        top: 210vh;
+        position: absolute;
+        width: 100%;
+        height: 130vh;
+        top: 590vh;
+    }
+    #about_tag{
+        top: 0;
+        color: #EDB000;
     }
     .about{
         top: -3vh;
-        height: 55%;
+        height: 60vh;
         width: 100%;
-
     }
     #right_about{
         margin-left: 0%;
+        background-color: #bb8b00;
+        border-left-style: none;
+        z-index: 1;
     }
-    #left_about{
-        top: 50vh;
+    #headline{
+        color: white;
+        font-size: 250%;
     }
     #about_para{
-        top: 6vh;
+        top: 10%;
         margin-left: 5%;
         margin-right: 5%;
-        font-size: 4vw;
+        font-size: 100%;
+        line-height: 3vh;
+    }
+    #about_text{
+        color: #232323;
+        top: 5vh;
+        font-size: 125%;
+        line-height: 3vh;
     }
     #phone_number{
-        text-align: center;
-        font-size: 5vw;
-        font-family: cooper black;
-        font-weight: 900;
+        color: white;
+        font-size: 150%;
+        line-height: 3vh;
     }
-    /* -------------FOOTER STYLINGS-------------- */
-    #footer{
-        width: 100%;
-        top: 330vh;
+    #secret{ color: white; cursor: text;}
+    #secret:hover{ color: white; cursor: text;}
+    #secret:visited{ color: white; cursor: text;}
+    
+    #left_about{
+        top: 55vh;
+        z-index: 0;
+        height: 85vh;
+        background-size: 160%;
+        background-position-x: center;
+        background-position-y: 29vh;
     }
-    #footer_logo{
-        width: 35vw;
-        left: 33vw;
-        top: 1vh;
+    #instatext2{
+        width: 85vw;
+        left: 7.5vw;
     }
-    #by{
-        width: 50vw;
-        height: 8vh;
-        left: 26vw;
-        top: 15vh;
+    #instatext3{
+        font-size: 4vh;
+        color: #EDB000;
+        font-weight: 500;
     }
-    .contact{
-        top: 8vh;
+
+    /* -------------Questions STYLINGS-------------- */
+
+    #questions{
+        top: 740vh;
+        height: 80vh;
+    }
+    #question_box{
+        width: 100vw;
         left: 0vw;
     }
-    /* ------------------------ Booking Page Styling -----------------------*/
-    #book{
-        top: 13vh;
-        height: 4vh;
+    .question_boxes{
+        height: 5vh;
         width: 90vw;
-        font-size: 20px;
-        margin-left: 5vw;
+    }
+    #send_question{
+        font-size: 3vh;
+        background-color: #bb8b00;
+        color: white;
+        width: 30%;
+    }
+    input{
+        width: 90vw;
+    }
+    #the_question{
+        height: 18vh;
+        font-size: 3vh;
+    }
+    #question_name, #question_email{
+        width: 90vw;
+    }
+    /* -------------FOOTER STYLINGS-------------- */
+    #footer, #booking_footer{
+        width: 100%;
+        top: 820vh;
+        height: 40vh;
+    }
+    #booking_footer{
+        top: 120vh;
+    }
+    #footer_logo{
+        left: 35vw;
+        width: 30vw;
+        top: 31vh;
+    }
+    #by{
+        width: 30vw;
+        left: 35vw;
+        top: 25vh;
+        color: gray;
+        font-size: 3vw;
+    }
+    #copyright{
+        width: 90vw;
+        left: 5vw;
+    }
+    /* ------------------------ Booking Page Styling -----------------------*/
+    #AutoMo2{
+        top: 3vh;
+    }
+    #book{
+        top: 22vh;
+        height: 6vh;
+        width: 100vw;
+        margin-left: 0%;
+        font-size: 150%;
+        padding-top: 1.8%;
     }
     #info_table{
-        width: 90vw;
-        margin-left: 5vw;
-        padding: 10px 17px;
-        top: 17vh;
+        width: 100vw;
+        margin-left: 0%;
+        padding: 2% 0%;
+        top: 28vh;
+        font-size: 90%;
     }
-    input[type=text], select, textarea{
-        padding: 6px 10px;
-        margin: 4px 0;
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px 25px;
     }
-    #hose{
-        background-color: darkslategray;
+    input[type=submit]{
+        width: 100%;
+        margin: 0 0;
+        font-size: 150%;
+    }
+    label {
+        position: relative;
+        margin: 2vh;
+        font-size: 120%;
     }
     /*--------------------------- Thanks for oderding page -------------------------- */
     #thanks{
@@ -605,9 +822,6 @@ input[type=submit]{
 /****************************************************************************************/
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    body{
-        background-image: url('../Images/CarPhone.png');
-    }
     /* ----------------------Navbar Styling---------------------- */
     #nav_bar{
         width: 100vw;
@@ -616,131 +830,234 @@ input[type=submit]{
         width: 100vw;
     }
     .nav_items{
-        font-size: 25px;
-        padding: 2.5vh;
-        padding-top: 3.5vh;
-    }
-    #home{
-        padding-top: 2vh;
+        font-size: 250%;
     }
     /* ------------------------- AutoMo Logo ---------------------------------- */
     #AutoMo{
         width: 100vw;
         margin-left: 0vw;
-        top: 30vh;
+        top: 3vh;
     }
     #tagline{
-        top: 60vh;
+        top: 30vh;
         margin-left: 0vw;
     }
     /* ---------------------Services Styling----------------------- */
-    #oil{
-        left: 25vw;
-        width: 50vw;
-        height: 50vw;
+    #service_tag{
+        top: 2vh;
+        font-size: 8vw;
     }
-    #breaks{
-        top: 180vh;
-        left: 25vw;
-        height: 50vw;
-        width: 50vw;
+    #synthetic_oil{
+        top: 55vh;
     }
-    #oil_name{
-        font-size: 1.5vh;
-        font-weight: 900;
-        top: 117vh;
-        left: 36vw;
-        animation-name: none;
+    #synthetic_oil_eu{
+        top: 93vh;
     }
-    #breaks_name{
-        font-size: 1.5vh;
-        font-weight: 900;
-        top: 170vh;
-        left: 36vw;
-        animation-name: none;
+    #reg_oil2{
+        top: 131vh;
     }
-    .tags{
-        top: 105vh;
-        left: 0vw;
+    #synthetic_oil2{
+        top: 169vh;
+    }
+    #synthetic_oil_eu2{
+        top: 207vh;
+    }
+    #reg_oil3{
+        top: 245vh;
+    }
+    #synthetic_oil3{
+        top: 283vh;
+    }
+    #synthetic_oil_eu3{
+        top: 321vh;
+    }
+    #reg_oil4{
+        top: 359vh;
+    }
+    #synthetic_oil4{
+        top: 397vh;
+    }
+    #synthetic_oil_eu4{
+        top: 435vh;
+    }
+    .services, .second_services, .third_services, .fourth_services{
+        width: 80vw;
+        height: 35vh;
+        top: 17vh;
+        left: 10vw;
+    }
+    #synthetic_oil, #synthetic_oil_eu,  #reg_oil2, #synthetic_oil2, #synthetic_oil_eu2, #reg_oil3, #synthetic_oil3, #synthetic_oil_eu3,  #reg_oil4, #synthetic_oil4, #synthetic_oil_eu4{
+        left: 10vw;
+    }
+    .service_name{
+        font-size: 450%;
+    }
+    .service_big_name{
+        font-size: 350%;
+    }
+    .service_price{
+        font-size: 450%;
+    }
+    .service_description{
+        font-size: 225%;
+    }
+    .coming_soon{
+        width: 50%;
+        left: 25%;
         text-align: center;
-        font-size: 50px;
+    }
+    .service_book{
+        font-size: 220%;
+        height: 10%;
     }
     /* ---------------ABOUT SECTION STYLING------------ */
     #about_section{
-        top: 225vh;
+        top: 590vh;
+    }
+    #about_tag{
+        font-size: 8vw;
     }
     .about{
-        top: -3vh;
-        height: 55%;
+        height: 60vh;
         width: 100%;
-
     }
     #right_about{
         margin-left: 0%;
+        background-color: #bb8b00;
+        border-left-style: none;
     }
-    #left_about{
-        top: 52vh;
-        left: 0vw;
-        background-size: cover;
+    #headline{
+        color: white;
+        font-size: 300%;
     }
     #about_para{
-        top: 7vh;
+        top: 12%;
         margin-left: 5%;
         margin-right: 5%;
-        font-size: 3.2vw;
+        font-size: 200%;
+        line-height: 5vh;
+    }
+    #about_text{
+        color: #232323;
+        top: 5vh;
+        font-size: 125%;
+        line-height: 4vh;
     }
     #phone_number{
-        text-align: center;
-        font-size: 4vw;
-        font-family: cooper black;
-        font-weight: 900;
+        color: white;
+        font-size: 150%;
+        line-height: 3vh;
     }
-    /* -------------FOOTER STYLINGS-------------- */
-    #footer{
-        width: 100%;
-        top: 345vh;
+    #secret{ color: white; cursor: text;}
+    #secret:hover{ color: white; cursor: text;}
+    #secret:visited{ color: white; cursor: text;}
+
+    #left_about{
+        top: 58vh;
+        z-index: 0;
+        height: 85vh;
+        background-position-y: 31vh;
     }
-    #footer_logo{
-        width: 35vw;
-        height: 12vh;
-        left: 33vw;
-        top: 1vh;
+    #instatext2{
+        line-height: 5vh;
     }
-    #by{
-        width: 50vw;
-        height: 8vh;
-        left: 25vw;
-        top: 13vh;
+
+    /* -------------Questions STYLINGS-------------- */
+
+    #questions{
+        top: 745vh;
     }
-    .contact{
-        top: 8vh;
+    #question_box{
+        width: 100vw;
         left: 0vw;
     }
-    /* ------------------------ Booking Page Styling -----------------------*/
-    #book{
-        top: 13vh;
+    .question_boxes{
         height: 5vh;
         width: 90vw;
-        font-size: 20px;
-        margin-left: 5vw;
-        padding-top: 1vh;
+    }
+    #send_question{
+        font-size: 3vh;
+        background-color: #bb8b00;
+        color: white;
+        width: 30%;
+        left: 35%;
+        top: 100%;
+        height: vh;
+    }
+    input{
+        width: 90vw;
+    }
+    #the_question{
+        height: 18vh;
+        font-size: 3vh;
+    }
+    #question_name, #question_email{
+        width: 90vw;
+    }
+    /* -------------FOOTER STYLINGS-------------- */
+    #footer, #booking_footer{
+        width: 100%;
+        top: 820vh;
+        height: 43vh;
+    }
+    #booking_footer{
+        top: 110vh;
+    }
+    #footer_logo{
+        left: 40vw;
+        width: 20vw;
+        top: 35vh;
+    }
+    #by{
+        width: 30vw;
+        left: 35vw;
+        top: 25vh;
+        color: gray;
+        font-size: 2vw;
+    }
+    #copyright{
+        width: 90vw;
+        left: 5vw;
+    }
+    /* ------------------------ Booking Page Styling -----------------------*/
+    #AutoMo2{
+        top: 3vh;
+    }
+    #book{
+        top: 25vh;
+        height: 6vh;
+        width: 80vw;
+        margin-left: 10%;
+        font-size: 150%;
+        padding-top: 1.8%;
     }
     #info_table{
-        width: 90vw;
-        margin-left: 5vw;
-        padding: 10px 17px;
-        top: 18vh;
+        width: 80vw;
+        margin-left: 10%;
+        padding: 2% 0%;
+        top: 31vh;
+        height: 60vh;
     }
-    input[type=text], select, textarea{
-        padding: 6px 10px;
-        margin: 4px 0;
+    input[type=text], select, textarea {
+        width: 210%;
+        padding: 12px 25px;
+        font-size: 150%;
     }
-    #hose{
-        background-color: darkslategray;
+    input[type=submit]{
+        position: absolute;
+        width: 100%;
+        margin: 0 0;
+        font-size: 150%;
+        bottom: 0%;
+    }
+    label {
+        position: relative;
+        margin: 2vh;
+        font-size: 150%;
     }
     /*--------------------------- Thanks for oderding page -------------------------- */
     #thanks{
-        height: 13vh;
+        height: 50vh;
         top: 30vh;
     }
     #thnx_note{
@@ -768,137 +1085,290 @@ input[type=submit]{
 
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    /* ------------------------- AUTOMO WEBSITE CSS PAGE ------------------------------- */
-    #AutoMo{
-        top: 0vh;
+    /* ----------------------Navbar Styling---------------------- */
+    #nav_bar{
+        width: 100vw;
+        height: 15vh;
+    }
+    #nav_table{
+        width: 100vw;
+    }
+    .nav_items{
+        font-size: 17px;
+        padding: 2.5vh;
+        padding-top: 3.5vh;
+    }
+    /* ------------------------- AutoMo Logo ---------------------------------- */
+    #AutoMo, #AutoMo2{
+        width: 100vw;
+        margin-left: 0vw;
+        top: -20vh;
     }
     #tagline{
         top: 70vh;
+        width: 90vw;
+        margin-left: 5vw;
+        font-size: 150%;
     }
-    
-    /* ----------------------Navbar Styling---------------------- */
-    #nav_bar{
-        height: 16vh;
+    #job-slide{
+        top: 90vh;
     }
-
     /* ---------------------Services Styling----------------------- */
-    #oil{
-        top: 160vh;
-        height: 30vw;
-        width: 30vw;
-        left: 15vw;
+    #service_tag{
+        top: 35vh;
+        font-size: 8vw;
     }
-    #breaks{
-        top: 160vh;
-        height: 30vw;
-        width: 30vw;
-        left: 55vw;
+    #reg_oil{
+        top: 75vh;
     }
-    #oil_name{
-        font-size: 5vh;
-        font-weight: 900;
-        top: 130vh;
-        left: 5vw;
+    #synthetic_oil{
+        top: 205vh;
     }
-    #breaks_name{
-        font-size: 5vh;
-        font-weight: 900;
-        top: 130vh;
-        left: 45vw;
+    #synthetic_oil_eu{
+        top: 335vh;
+    }
+    #reg_oil2{
+        top: 465vh;
+    }
+    #synthetic_oil2{
+        top: 595vh;
+    }
+    #synthetic_oil_eu2{
+        top: 725vh;
+    }
+    #reg_oil3{
+        top: 855vh;
+    }
+    #synthetic_oil3{
+        top: 985vh;
+    }
+    #synthetic_oil_eu3{
+        top: 1115vh;
+    }
+    #reg_oil4{
+        top: 1245vh;
+    }
+    #synthetic_oil4{
+        top: 1375vh;
+    }
+    #synthetic_oil_eu4{
+        top: 1505vh;
+    }
+    .services, .second_services, .third_services, .fourth_services{
+        width: 60vw;
+        height: 120vh;
+        top: 17vh;
+        left: 20vw;
+    }
+    #synthetic_oil, #synthetic_oil_eu,  #reg_oil2, #synthetic_oil2, #synthetic_oil_eu2, #reg_oil3, #synthetic_oil3, #synthetic_oil_eu3,  #reg_oil4, #synthetic_oil4, #synthetic_oil_eu4{
+        left: 20vw;
     }
     .service_name{
-        height: 50vw;
-        width: 50vw;
-        top: 140vh;
-        animation-name: none;
+        font-size: 185%;
+    }
+    .service_big_name{
+        font-size: 140%;
+    }
+    .service_description{
+        font-size: 125%;
+    }
+    .coming_soon{
+        width: 50%;
+        left: 25%;
+    }
+    .service_book{
+        font-size: 200%;
+        height: 13%;
     }
     
     /* ---------------ABOUT SECTION STYLING------------ */
     #about_section{
-        top: 240vh;
+        position: absolute;
+        width: 100%;
+        height: 130vh;
+        top: 1750vh;
+    }
+    #about_tag{
+        top: 0;
+        color: #EDB000;
     }
     .about{
-        position: absolute;
-        height: 115%;
-        width: 50%;
-        margin-top: 13vh;
+        top: 25vh;
+        height: 60vh;
+        width: 100%;
     }
     #right_about{
-        top: 10vh;
-        margin-left: 50%;
+        margin-left: 0%;
+        background-color: #bb8b00;
+        border-left-style: none;
+        z-index: 1;
+        height: 90vh;
     }
-    #left_about{
-        top: 10vh;
+    #headline{
+        color: white;
+        font-size: 250%;
     }
     #about_para{
-        position: absolute;
-        font-size: 1.5vw;
-        width: auto;
-        height: auto;
-        top: 23vh;
-        margin-left: 15%;
-        margin-right: 15%;
-        text-align: center;
-        font-family: cooper black;
+        top: 20%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 100%;
+        line-height: 100%;
+    }
+    #about_text{
+        color: #232323;
+        top: 5vh;
+        font-size: 125%;
+        line-height: 100%;
     }
     #phone_number{
-        text-align: center;
-        font-size: 2.5vw;
-        font-family: cooper black;
-        font-weight: 900;
+        color: white;
+        font-size: 150%;
+        line-height: 3vh;
+    }
+    #secret{ color: white; cursor: text;}
+    #secret:hover{ color: white; cursor: text;}
+    #secret:visited{ color: white; cursor: text;}
+    
+    #left_about{
+        top: 115vh;
+        z-index: 0;
+        height: 100vh;
+        background-size: 50%;
+        background-position-x: 0vw;
+        background-position-y: 10vh;
+    }
+    .instatext{
+        font-size: 250%;
+        left: 43%;
+        width: 50%;
+        top: 45%;
+    }
+    #instatext2{
+        font-size: 150%;
+        width: 85vw;
+        left: 25%;
+    }
+    #instatext3{
+        font-size: 4vh;
+        color: #EDB000;
+        font-weight: 500;
     }
 
+    /* -------------Questions STYLINGS-------------- */
+
+    #questions{
+        top: 1980vh;
+        height: 80vh;
+    }
+    #question_box{
+        width: 100vw;
+        left: 0vw;
+        top: 65%;
+    }
+    #questions_tag{
+        top: 55%;
+    }
+    .question_boxes{
+        height: 5vh;
+        width: 90vw;
+    }
+    #send_question{
+        font-size: 200%;
+        background-color: #bb8b00;
+        color: white;
+        width: 30%;
+        height: 15vh;
+    }
+    input{
+        width: 90vw;
+    }
+    #the_question{
+        height: 18vh;
+        font-size: 3vh;
+    }
+    #question_name, #question_email{
+        width: 90vw;
+    }
     /* -------------FOOTER STYLINGS-------------- */
-    #footer{
-        background-color: black;
-        position: absolute;
-        text-align: center;
-        height: 10vh;
+    #footer, #booking_footer{
         width: 100%;
-        top: 380vh;
+        top: 2120vh;
+        height: 100vh;
+    }
+    #booking_footer{
+        top: 420vh;
     }
     #footer_logo{
-        position: absolute;
-        height: 8vh;
-        width: 16vh;
-        left: 1px;
-        top: 2.5vh;
+        left: 40vw;
+        width: 20vw;
+        height: 40vh;
+        top: 55vh;
     }
     #by{
-        position: absolute;
-        color: white;
-        width: 12vw;
-        height: 6vh;
-        left: 85vw;
-        top: 2.5vh;
-        font-size: 5px;
+        width: 30vw;
+        height: 15vh;
+        left: 35vw;
+        top: 45vh;
+        color: gray;
+        font-size: 65%;
     }
-    .contact{
-        position: relative;
-        top: 2vh;
-    }
-    #appointment_div{
-        position: absolute;
-        top: 30vh;
-        color: #bb8b00;
-        font-size: 20px;
-        font-family: cooper black;
-        width: 99%;
-        opacity: 0.90;
+    #copyright{
+        width: 90vw;
+        left: 5vw;
+        font-size: 100%;
     }
     /* ------------------------ Booking Page Styling -----------------------*/
+    #AutoMo2{
+        top: -25vh;
+    }
     #book{
-        top: 20vh;
-        height: 10vh;
+        top: 70vh;
+        height: 23vh;
+        width: 80vw;
+        margin-left: 10%;
+        font-size: 150%;
+        padding-top: 1.8%;
     }
     #info_table{
+        width: 80vw;
+        margin-left: 10%;
+        padding: 2% 0%;
+        top: 93vh;
+        font-size: 90%;
+        height: auto;
+    }
+    input[type=text], select, textarea {
+        width: 175%;
+        padding: 12px 25px;
+    }
+    input[type=submit]{
+        position: relative;
+        width: 100%;
+        margin: 0 0;
+        font-size: 150%;
+        top: 5vh;
+    }
+    label {
+        position: relative;
+        margin: 2vh;
+        font-size: 120%;
+    }
+    /*--------------------------- Thanks for oderding page -------------------------- */
+    #thanks{
+        height: 50vh;
         top: 30vh;
     }
-    input[type=text], select, textarea{
-        padding: 6px 10px;
-        margin: 4px 0;
+    #thnx_note{
+        top: -2vh;
     }
-    #hose{
-        background-color: darkslategray;
+    /* ------------------------- Appointment Page Stylings ---------------------------------*/
+    #appointment_div{
+        font-size: 10px;
+        top: 10vh;
+    }
+    .appointment_cards{
+        left: 5vw;
+        width: 90vw;
     }
 }
