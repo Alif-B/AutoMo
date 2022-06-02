@@ -43,7 +43,7 @@
 
     <div id='reg_oil' class='services'>
         <div class='service_name'> Regular Oil Change </div>
-        <div class='service_price'> $ 49.99 </div>
+        <div class='service_price'> $ 59.99 </div>
         <ul class='service_description'> 
             <li> Upto 5L of Oil & Filter Included </li>
             <li> 50% off if you own Oil & Filter </li> 
@@ -54,7 +54,7 @@
 
     <div id='synthetic_oil' class='services'>
         <div class='service_name'> Full Synthetic Oil Change </div>
-        <div class='service_price'> $ 59.99 </div>
+        <div class='service_price'> $ 64.99 </div>
         <ul class='service_description'> 
             <li> For non European Cars </li>
             <li> Oil Filter Included </li> 
@@ -65,7 +65,7 @@
 
     <div id='synthetic_oil_eu' class='services'>
         <div class='service_name'> Full Synthetic Oil Change </div>
-        <div class='service_price'> $ 89.99 + </div>
+        <div class='service_price'> $ 94.99 + </div>
         <ul class='service_description'> 
             <li> For European Cars </li>
             <li> Oil Filter Included </li> 
