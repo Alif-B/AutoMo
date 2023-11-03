@@ -43,7 +43,7 @@
 
     <div id='reg_oil' class='services'>
         <div class='service_name'> Regular Oil Change </div>
-        <div class='service_price'> $ 59.99 </div>
+        <div class='service_price'> $ 64.99+ </div>
         <ul class='service_description'> 
             <li> Upto 5L of Oil & Filter Included </li>
             <li> 50% off if you own Oil & Filter </li> 
@@ -54,7 +54,7 @@
 
     <div id='synthetic_oil' class='services'>
         <div class='service_name'> Full Synthetic Oil Change </div>
-        <div class='service_price'> $ 64.99 </div>
+        <div class='service_price'> $ 69.99+ </div>
         <ul class='service_description'> 
             <li> For non European Cars </li>
             <li> Oil Filter Included </li> 
@@ -65,7 +65,7 @@
 
     <div id='synthetic_oil_eu' class='services'>
         <div class='service_name'> Full Synthetic Oil Change </div>
-        <div class='service_price'> $ 94.99 + </div>
+        <div class='service_price'> $ 69.99 + </div>
         <ul class='service_description'> 
             <li> For European Cars </li>
             <li> Oil Filter Included </li> 
@@ -78,7 +78,7 @@
 
     <div id='reg_oil2' class='second_services'>
         <div class='service_name'> Brake Services </div>
-        <div class='service_price'> $ 79.99 </div>
+        <div class='service_price'> $ 119.99 </div>
         <ul class='service_description'> 
             <li> Brake Pads Included </li>
             <li> Rotors Sold Seperately </li> 
@@ -89,7 +89,7 @@
 
     <div id='synthetic_oil2' class='second_services'>
         <div class='service_big_name'> Brake Bleeding / Brake Fluid Flush </div>
-        <div class='service_price'> $ 79.99 </div>
+        <div class='service_price'> $ 79.99+ </div>
         <ul class='service_description'> 
             <li> Full Brake System Flush </li>
             <li> Brake Fluid Included </li> 
@@ -100,7 +100,7 @@
 
     <div id='synthetic_oil_eu2' class='second_services'>
         <div class='service_big_name'> Automatic Trasmission Fluid </div>
-        <div class='service_price'> $ 79.99 </div>
+        <div class='service_price'> $ 89.99+ </div>
         <ul class='service_description'> 
             <li> Upto 3L of Fluid </li>
             <li> Oil Filter Included </li> 
@@ -113,7 +113,7 @@
 
     <div id='reg_oil3' class='third_services'>
         <div class='service_name'> CVT Fluid Change </div>
-        <div class='service_price'> $ 99.99 </div>
+        <div class='service_price'> $ 119.99+ </div>
         <ul class='service_description'> 
             <li> Upto 4L of Fluid </li>
             <li> Drain and Refill </li> 
@@ -124,7 +124,7 @@
 
     <div id='synthetic_oil3' class='third_services'>
         <div class='service_name'> Full Interior Detail </div>
-        <div class='service_price'> $ 199.99 </div>
+        <div class='service_price'> $ 199.99+ </div>
         <ul class='service_description'> 
             <li> Interior Vacuum & Carpet Shampoo</li> 
             <li> All Dash Trim cleaned & protected </li>
@@ -136,7 +136,7 @@
     <div id='synthetic_oil_eu3' class='third_services'>
         <div class="coming"> <div class="coming_soon"> Coming Soon </div> </div>
         <div class='service_name'> AC Recharge </div>
-        <div class='service_price'> $ 59.99 </div>
+        <div class='service_price'> $ 59.99+ </div>
         <ul class='service_description'> 
         </ul>
         <a href="services.php?service=9"> <div class='service_book'> BOOK </div> </a>
