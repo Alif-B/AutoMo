@@ -142,7 +142,7 @@
         <a href="services.php?service=9"> <div class='service_book'> BOOK </div> </a>
     </div>
 
-    <!-- Fourth row of Services -->
+    <!-- Fourth row of Services. -->
 
     <div id='reg_oil4' class='fourth_services'>
         <div class="coming"> <div class="coming_soon"> Coming Soon </div> </div>
