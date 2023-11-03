@@ -124,7 +124,7 @@
 
     <div id='synthetic_oil3' class='third_services'>
         <div class='service_name'> Full Interior Detail </div>
-        <div class='service_price'> $ 69.99 </div>
+        <div class='service_price'> $ 199.99 </div>
         <ul class='service_description'> 
             <li> Interior Vacuum & Carpet Shampoo</li> 
             <li> All Dash Trim cleaned & protected </li>
